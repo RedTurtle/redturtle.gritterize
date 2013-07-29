@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 """Init and utils."""
-
+from logging import getLogger
 from zope.i18nmessageid import MessageFactory
 
-_ = MessageFactory('redturtle.gritterize')
+PROJECTNAME = 'redturtle.gritterize'
+
+gritterizeMessageFactory = MessageFactory(PROJECTNAME)
+gritterizeLogger = getLogger(PROJECTNAME)
 
 
 def initialize(context):
