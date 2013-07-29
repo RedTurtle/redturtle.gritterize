@@ -30,13 +30,14 @@ setup(
     author_email='sviluppoplone@redturtle.it',
     url='http://pypi.python.org/pypi/redturtle.gritterize',
     license='BSD',
-    packages=find_packages('src', exclude=['ez_setup']),
+    packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['redturtle'],
     include_package_data=True,
     zip_safe=False,
     install_requires=[
         'Plone',
         'setuptools',
+        'collective.js.gritter',
     ],
     extras_require={
         'test': [
