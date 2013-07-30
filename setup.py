@@ -12,15 +12,14 @@ def read(*rnames):
 
 long_description = \
     read('README.rst') + \
-    read('docs', 'CHANGELOG.rst') + \
-    read('docs', 'LICENSE.rst')
+    read('docs', 'CHANGELOG.rst')
 
 setup(
     name='redturtle.gritterize',
     version='0.9.1.dev0',
     description="Plone integration with Gritter",
     long_description=long_description,
-    # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
+    # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         "Framework :: Plone",
         "Programming Language :: Python",
@@ -34,7 +33,7 @@ setup(
     keywords='Plone Python',
     author='RedTurtle Technology',
     author_email='sviluppoplone@redturtle.it',
-    url='http://pypi.python.org/pypi/redturtle.gritterize',
+    url='https://pypi.python.org/pypi/redturtle.gritterize',
     license='BSD',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['redturtle'],

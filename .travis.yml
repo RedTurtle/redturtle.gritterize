@@ -8,6 +8,3 @@ install:
 script:
   - make tests
 
-notifications:
-  irc:
-    - "irc.freenode.org#plone"

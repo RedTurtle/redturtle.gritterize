@@ -1,4 +1,4 @@
-graft src/redturtle
+graft redturtle
 include *.cfg *.rst *.in
 
 # added by check_manifest.py
