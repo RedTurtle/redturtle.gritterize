@@ -21,12 +21,12 @@ bin/sphinx-build: .installed.cfg
 	bin/buildout $(options)
 
 bin/buildout: $(python) buildout.cfg bootstrap.py
+	./bin/pip install --upgrade setuptools
 	$(python) bootstrap.py -d
 	@touch $@
 
 $(python):
 	virtualenv -p python$(version) --no-site-packages .
-	./bin/pip install --upgrade setuptools
 	@touch $@
 
 tests: .installed.cfg
