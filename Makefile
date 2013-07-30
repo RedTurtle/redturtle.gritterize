@@ -21,7 +21,7 @@ bin/sphinx-build: .installed.cfg
 	bin/buildout $(options)
 
 bin/buildout: $(python) buildout.cfg bootstrap.py
-	./bin/pip install --upgrade setuptools
+	pip install --upgrade setuptools
 	$(python) bootstrap.py -d
 	@touch $@
 
