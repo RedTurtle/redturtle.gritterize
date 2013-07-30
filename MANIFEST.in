@@ -1,4 +1,3 @@
-graft redturtle
 include *.cfg *.rst *.in
 
 # added by check_manifest.py
@@ -7,9 +6,4 @@ include .travis.yml
 include Makefile
 recursive-include docs *.py
 recursive-include docs *.rst
-recursive-include redturtle *.css
-recursive-include redturtle *.gitkeep
-recursive-include redturtle *.js
-recursive-include redturtle *.pt
-recursive-include redturtle *.xml
-recursive-include redturtle *.zcml
+recursive-include redturtle *
