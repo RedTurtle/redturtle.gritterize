@@ -3,6 +3,7 @@
 bin
 develop-eggs
 docs/html
+eggs
 include
 lib
 parts

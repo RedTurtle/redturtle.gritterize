@@ -14,26 +14,32 @@
   width:301px;
   z-index:9999;
 }
-.gritter-item-wrapper {
-  position:relative;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  background-color: #EEE;
-  padding: 5px 8px;
-}
 #gritter-notice-wrapper .gritter-item-wrapper {
   width:300px;
 }
-.gritter-item-wrapper.info {
+.gritter-item-wrapper {
+  -webkit-border-radius: 4px;
   background-color: #d9edf7;
+  border-color: #3A87AD;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;  
   color: #3a87ad;
+  font-size: 80%;
+  margin-bottom:10px;
+  padding: 5px 8px;
+  position:relative;
+}
+.gritter-item-wrapper.info {
 }
 .gritter-item-wrapper.error {
   background-color: #f2dede;
+  border-color: #b94a48;
   color: #b94a48;
 }
 .gritter-item-wrapper.warning {
   background-color: #fcf8e3;
+  border-color: #c09853;
   color: #c09853;
 }
 .gritter-item a {

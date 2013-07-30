@@ -21,9 +21,11 @@ We want to manage portal messages with gritter!
     message = jq(this);
     mygritter = {title: message.find('dt').html(),
                  text: message.find('dd').html(),
-                 class_name: message.attr('class')
+                 class_name: message.attr('class'),
+                 sticky:true
                 };
     if (mygritter.title && mygritter.text){
+      message.remove();
       return jq.gritter.add(mygritter);
     } 
     return -1;

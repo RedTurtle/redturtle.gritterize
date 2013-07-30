@@ -10,4 +10,11 @@
       directory="static"
       />
 
+    <browser:page
+      for="*"
+      name="test-redturtle-gritterize"
+      permission="zope2.View"
+      template="test-redturtle-gritterize.pt"
+      />
+
 </configure>

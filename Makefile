@@ -26,6 +26,7 @@ bin/buildout: $(python) buildout.cfg bootstrap.py
 
 $(python):
 	virtualenv -p python$(version) --no-site-packages .
+	./bin/pip install --upgrade setuptools
 	@touch $@
 
 tests: .installed.cfg
