@@ -41,5 +41,19 @@ Then, install `redturtle.gritterize` using the Add-ons control panel.
 Configuration
 =============
 
-None for the moment.
+At the moment it is really basic, **this will change**.
+You can configure the stickiness and the persistence time (in milliseconds)
+by adding a custom a config object to the igritter global object::
+
+  igritter.config = {
+      time: {
+        'portalMessage info': 10000,
+        'portalMessage warning': 20000,
+      }
+  };
+
+According to the matching portal message class the right persistnece time
+will be set (in this case 10 seconds for the info ones,
+20 for the warning ones).
+If the lookup fails the gritter message will be sticky.
 
