@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.9.2 (unreleased)
+0.9.2 (2013-09-10)
 ------------------
 
 - The stickiness and persistence time of the popup can be configured now
