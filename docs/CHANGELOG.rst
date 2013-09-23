@@ -5,7 +5,9 @@ Changelog
 0.9.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Added a new add_gritter function to allow adding gritter messages unrelated
+  to plone portal messages
+  [ale-rt]
 
 
 0.9.2 (2013-09-10)

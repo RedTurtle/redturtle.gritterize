@@ -57,3 +57,24 @@ will be set (in this case 10 seconds for the info ones,
 20 for the warning ones).
 If the lookup fails the gritter message will be sticky.
 
+Adding more gritter messages
+============================
+
+Following the same approach you can add additional gritter messages
+(e.g. you can pop up form validation messages).
+
+This is an example::
+
+  message = jq('.fieldErrorBox');
+  mygritter = {title: message.parent().find('.widget > span > a').html(),
+               text: message.html(),
+               class_name: 'portalMessage error',
+               target: message,
+               remove: false
+  };
+  igritter.add_gritter(mygritter);
+
+This will take the element with class .fieldErrorBox and try to get info
+from the page to fill in the gritter message.
+
+If remove is true the orginal error will be removed.
