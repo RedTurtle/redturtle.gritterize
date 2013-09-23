@@ -16,7 +16,7 @@ long_description = \
 
 setup(
     name='redturtle.gritterize',
-    version='0.9.3',
+    version='0.9.4.dev0',
     description="Plone integration with Gritter",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
