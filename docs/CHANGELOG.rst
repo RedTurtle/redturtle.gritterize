@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-0.9.3 (unreleased)
+0.9.3 (2013-09-23)
 ------------------
 
 - Added a new add_gritter function to allow adding gritter messages unrelated
